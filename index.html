@@ -1,1 +1,87 @@
-/martinquincy1.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Our Website is Launching Soon</title>
+    <meta name="description" content="Exciting news! Our website is coming soon. Stay tuned for updates on our upcoming launch. Discover what we're building next.">
+    <meta name="keywords" content="personal portfolio, coming soon, portfolio website, website launch">
+    <meta name="author" content="Amirhossein Mohammadi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourwebsite.com">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .countdown {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        .social-links {
+            margin-top: 30px;
+        }
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #ffd700;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            animation: fadeIn 2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coming Soon</h1>
+        <p>This is a personal website for introducing my portfolio.</p>
+        <p>We're working hard to bring you an amazing experience. Our website is launching soon!</p>
+    </div>
+    <script>
+        // Simple countdown placeholder
+        const countdownElement = document.getElementById('countdown');
+        let days = 30;
+        setInterval(() => {
+            days--;
+            if (days > 0) {
+                countdownElement.textContent = `Launching in: ${days} days`;
+            } else {
+                countdownElement.textContent = 'Launching Soon!';
+            }
+        }, 86400000); // Update every day (24 hours in milliseconds)
+    </script>
+</body>
+</html>
